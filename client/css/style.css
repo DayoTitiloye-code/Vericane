@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #EEEEEE;
+    font-family: 'Mulish', 'Ariel';
 }
 
 #cover-img {
@@ -26,9 +27,10 @@ body {
     align-items: center;
     justify-content: center;
     width: 50vw;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background-color: #222831;
     padding-bottom: 50px;
+    color: white;
 }
 
 #cover-title {
@@ -43,10 +45,14 @@ body {
     font-family: 'Mulish', 'Ariel';
     background-color: #FFD369;
     border: none;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
-nav ul {
+#cover-btn:hover {
+    cursor: pointer;
+}
+
+#nav-ul {
     list-style-type: none;
     margin: 0;
     /* padding: 0; */
@@ -56,26 +62,116 @@ nav ul {
     padding: 10px;
     background-color: #222831;
 
+
 }
 
-li {
+#nav-ul li {
     display: inline;
     /* border: solid 1px white; */
 }
 
-li a {
+#nav-ul li a {
     text-decoration: none;
     color: #EEEEEE;
     font-family: 'Mulish', 'Ariel';
     padding: 11px 75px;
 }
 
-li a:hover {
+#nav-ul li a:hover {
     background-color: #FFD369;
     color: black;
+    transition: 0.5s;
 }
 
 .active {
     background-color: #FFD369;
     color: white;
+}
+
+.slide img {
+    height: 300px;
+    width: 400px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#carousel-title {
+    margin-left: 10px;
+    font-size: 30px;
+    /* font-weight: bolder; */
+}
+
+.carousel {
+    position: relative;
+    width: 50vw;
+    /* position: relative; */
+    margin: 0px auto;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: center;
+    padding: 0px 90px 0px 0px;
+    
+    /* background-color: #222831; */
+}
+
+.carousel ul {
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s opacity ease-in-out;
+    border: 1px solid black;
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    background-color: #222831;
+    box-shadow: rgba(0, 0, 0, 0.15) 10px 10px;
+    color: white;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.slide h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.slide p {
+    text-align: center;
+    font-size: 19px;
+}
+
+.carousel-btn {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 35px;
+    bottom: -12.5rem;
+    z-index: 2;
+    transform: translateY(-5%);
+    cursor: pointer;
+}
+
+.carousel-btn:hover,
+.carousel-btn:focus {
+    color: white;
+    transition: 0.3s;
+}
+
+.carousel-btn.prev {
+    left: 80px;
+    top: 200px;
+}
+
+.carousel-btn.next {
+    right: 0px;
+    top: 200px;
 }

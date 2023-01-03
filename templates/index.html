@@ -103,8 +103,10 @@
         
         <div class="newsletter">
             <p id="newsletter-txt">Enter Your Email Below To Sign Up To The Vericane Newsletter</p>
-            <input type="text" placeholder="Your Email Here"/>
-            <button><i class="fa-solid fa-arrow-right"></i></button>
+            <form action="newsletter" method="get">
+                <input type="text" placeholder="Your Email Here" name="email"/>
+                <input type="submit" value="Submit" id="submit">
+            </form>
         </div>
     </footer>
 </body>

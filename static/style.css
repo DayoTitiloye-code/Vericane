@@ -14,7 +14,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("../assets/dbz.jpg");
+    background-image: url("./dbz.jpg");
     background-color: #EEEEEE;
     background-size: cover;
     /* background-color: blue; */

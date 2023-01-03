@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 from flask_cors import CORS
 from werkzeug import exceptions
 from flask_sqlalchemy import SQLAlchemy
@@ -12,6 +12,11 @@ db = SQLAlchemy(app)
 
 @app.route('/')
 def home():
+    return render_template('index.html'), 200
+
+@app.route('/newsletter', methods = ['GET'])
+def newsletter():
+    email = request.args.get('email')
     return render_template('index.html'), 200
 
 @app.route('/about')

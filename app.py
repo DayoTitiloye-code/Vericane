@@ -1,10 +1,14 @@
 from flask import Flask, render_template, jsonify
 from flask_cors import CORS
 from werkzeug import exceptions
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.sqlite3'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 CORS(app)
+db = SQLAlchemy(app)
 
 @app.route('/')
 def home():
@@ -25,4 +29,6 @@ def handle_500(err):
     return jsonify({"message": f"It's not you, it's us"}), 500
 
 if __name__ == '__main__':
+    with app.app_context():
+        db.create_all()
     app.run()

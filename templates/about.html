@@ -13,7 +13,16 @@
 </head>
 
 <body>
-    <p>About</p>
+    <nav>
+        <ul id="nav-ul">
+            <li><a href="#" class="nav-btn">Home</a></li>
+            <li><a href="about.html" class="nav-btn">Issues</a></li>
+            <li><a href="about.html" class="nav-btn">Podcast</a></li>
+            <li><a href="{{ url_for('about_page')}}" class="nav-btn">About Us</a></li>
+            <li><a href="about.html" class="nav-btn">Shop</a></li>
+            <li><a href="about.html" class="nav-btn">Contact us</a></li>
+        </ul>
+    </nav>
 </body>
 
 </html>

@@ -241,6 +241,12 @@ footer i {
     color: white;
     font-size: 30px;
     margin-right: 20px;
+    
+}
+.icons{
+    /* border: 1px solid white; */
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .newsletter {
@@ -254,35 +260,10 @@ footer #trademark {
     color: #FFD369;
 }
 
-footer input {
-    border: none;
-    width: 300px;
-    height: 25px;
-    padding-left: 5px;
-}
-
-footer input::placeholder {
-    font-family: 'Mulish', 'Ariel';
-}
-
-footer input:focus {
-    outline: none;
-    font-family: 'Mulish', 'Ariel';
-}
-
-footer button {
-    height: 25px;
-    font-size: 10px;
-}
-
-footer button i {
-    color: black;
-    font-size: 15px;
-}
 
 .newsletter {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 /* .newsletter p{

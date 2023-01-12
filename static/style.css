@@ -266,10 +266,49 @@ footer #trademark {
     flex-direction: row;
 }
 
-/* .newsletter p{
-    order: 2;
+#about-title{
+    text-align: center;
+    font-size: 50px;
 }
 
-.newsletter input button {
-    order: 1;
-} */
+.person-one{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+
+}
+
+.person-one img{
+    width: 200px;
+    height: 200px;
+    /* margin-left: 150px;
+    margin-bottom: 50px; */
+}
+
+.section-one{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    /* padding-right: 50px; */
+    /* padding-left: 50px; */
+    /* padding-top: 50px; */
+    padding: 0px 100px 30px 100px;
+    align-items: center;
+    justify-content: center;
+}
+.section-one h2{
+    /* margin-left: 50px; */
+}
+
+.section-two{
+    text-align: center;
+    padding: 45px 30px 0 30px;
+    color: white;
+    background-color: #222831;
+}
+
+.section-two em{
+    color: #FFD369;
+    position: relative;
+    bottom: -50px;
+}

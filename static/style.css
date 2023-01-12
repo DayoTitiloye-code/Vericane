@@ -6,6 +6,9 @@ body {
     padding: 0;
     background-color: #EEEEEE;
     font-family: 'Mulish', 'Ariel';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #cover-img {
@@ -163,7 +166,7 @@ body {
     color: #FFD369;
 }
 
-.carousel-btn:hover{
+.carousel-btn:hover {
     color: white;
     transition: 0.7s;
     transition-delay: 0.05s;
@@ -179,7 +182,7 @@ body {
     top: 270px;
 }
 
-.latest-issue-box{
+.latest-issue-box {
     /* border: 1px solid black; */
     padding-top: 10px;
     margin-bottom: 50px;
@@ -187,7 +190,7 @@ body {
     padding-left: 10px;
     background-color: #222831;
     color: white;
-    
+
 }
 
 .latest-issue-box img {
@@ -195,19 +198,21 @@ body {
     /* height: 500px; */
 }
 
-.latest-issue-box .content{
+.latest-issue-box .content {
     display: flex;
     flex-direction: row;
     padding: 5px;
 }
 
-.latest-issue-box p{
+.latest-issue-box p {
     margin-left: 10px;
     margin-top: 0px;
 }
-.latest-issue-box h3{
+
+.latest-issue-box h3 {
     color: #FFD369;
 }
+
 .latest-issue-box button {
     float: right;
     margin-right: 30px;
@@ -222,32 +227,34 @@ body {
     cursor: pointer;
 }
 
-footer{
+footer {
     border: solid 1px black;
     padding: 30px 0px;
     background-color: #222831;
     color: white;
     padding-left: 10px;
+    margin-top: auto;
 }
 
-footer i{
+footer i {
     list-style-type: none;
     color: white;
     font-size: 30px;
     margin-right: 20px;
 }
-.newsletter{
+
+.newsletter {
     float: right;
     margin-right: 70px;
     /* border: solid 1px white; */
     margin-top: -50px;
 }
 
-footer #trademark{
+footer #trademark {
     color: #FFD369;
 }
 
-footer input{
+footer input {
     border: none;
     width: 300px;
     height: 25px;
@@ -263,17 +270,18 @@ footer input:focus {
     font-family: 'Mulish', 'Ariel';
 }
 
-footer button{
+footer button {
     height: 25px;
     font-size: 10px;
 }
-footer button i{
+
+footer button i {
     color: black;
     font-size: 15px;
 }
 
-.newsletter{
-    display: flex; 
+.newsletter {
+    display: flex;
     flex-direction: column;
 }
 

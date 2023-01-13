@@ -23,6 +23,9 @@ def newsletter():
 def about_page():
     return render_template('about.html'), 200
 
+@app.route('/contact')
+def contact_page():
+    return render_template('contact.html'), 200
 
 @app.errorhandler(exceptions.NotFound)
 def handle_404(err):

@@ -275,7 +275,7 @@ footer #trademark {
     display: flex;
     flex-direction: row;
     /* border: 1px solid black; */
-
+    margin-top: 40px;
 }
 
 .person-one img{
@@ -311,4 +311,18 @@ footer #trademark {
     color: #FFD369;
     position: relative;
     bottom: -50px;
+}
+
+.person-two{
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        margin-bottom: 110px;
+}
+
+.person-two img {
+    width: 200px;
+    height: 200px;
+    /* margin-left: 150px;
+    margin-bottom: 50px; */
 }

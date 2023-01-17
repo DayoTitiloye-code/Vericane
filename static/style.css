@@ -378,3 +378,15 @@ footer #trademark {
 .section-two h3{
     text-align: end;
 }
+
+.section-three{
+    padding: 10px;
+    color: white;
+    background-color: #222831;
+    margin-bottom: 20px;
+}
+
+.section-three h3{
+    color: #FFD369;
+    text-align: center;
+}

@@ -331,6 +331,7 @@ footer #trademark {
     /* border: 1px solid black; */
     display: flex;
     flex-direction: row;
+    margin-top: 20px;
 }
 
 .profile-one{
@@ -389,4 +390,91 @@ footer #trademark {
 .section-three h3{
     color: #FFD369;
     text-align: center;
+}
+
+form{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: auto;
+    padding: 35px 50px;
+    background-color: #222831;
+    margin-bottom: 40px;
+}
+
+form label {
+    font-size: 20px;
+    color: #FFD369;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+form input{
+    padding: 10px;
+    font-family: 'Mulish', 'Ariel';
+    font-size: 15px;
+    color: black;
+}
+
+form input::placeholder{
+    font-size: 15px;
+    font-family: 'Mulish', 'Ariel';
+    color: black;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form button{
+    width: 30%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Mulish', 'Ariel';
+    font-weight: bold;
+    background-color: white;
+    border: none;
+}
+
+form button:hover{
+    background-color: #FFD369;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@keyframes slideUpTop {
+    from{
+        transform: translateY(300px);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUpBottom {
+    from {
+        transform: translateY(-300px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.profile-one img {
+    animation-name: slideUpTop;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+}
+
+.profile-two img {
+    animation-name: slideUpBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
 }

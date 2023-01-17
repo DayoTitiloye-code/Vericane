@@ -328,14 +328,31 @@ footer #trademark {
 }
 
 .profiles{
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
 }
 
 .profile-one{
-    border: 1px solid red;
+    border-right: 3px solid #FFD369;
+    flex: 1 1 0px;
+    text-align: center;
 }
 
 .profile-one img{
     width: 300px;
     height: 300px;
 }
+
+.profile-two{
+    flex: 1 1 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-two img {
+    width: 300px;
+    height: 300px;
+}
+

@@ -370,3 +370,11 @@ footer #trademark {
 .section-one h3{
     color: #FFD369;
 }
+
+.section-two{
+    padding: 10px;
+}
+
+.section-two h3{
+    text-align: end;
+}

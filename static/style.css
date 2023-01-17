@@ -326,3 +326,16 @@ footer #trademark {
     /* margin-left: 150px;
     margin-bottom: 50px; */
 }
+
+.profiles{
+    border: 1px solid black;
+}
+
+.profile-one{
+    border: 1px solid red;
+}
+
+.profile-one img{
+    width: 300px;
+    height: 300px;
+}

@@ -14,9 +14,12 @@ db = SQLAlchemy(app)
 def home():
     return render_template('index.html'), 200
 
-@app.route('/newsletter', methods = ['GET'])
-def newsletter():
+@app.route('/people', methods = ['GET'])
+def contact_form():
+    firstName = request.args.get('firstName')
+    lastName = request.args.get('lastName')
     email = request.args.get('email')
+    business = request.args.get('business')
     return render_template('index.html'), 200
 
 @app.route('/about')

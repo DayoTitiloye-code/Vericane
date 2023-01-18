@@ -10,6 +10,14 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 CORS(app)
 db = SQLAlchemy(app)
 
+class People(db.Model):
+    _id = db.Column('id', db.Integer, primary_key = True)
+    firstName = db.Column('first name', db.String(30), nullable = False)
+    lastName = db.Column('last name', db.String(40), nullable = False)
+    email = db.Column('email', db.String(60), nullable = False)
+    business = db.Column('business/company', db.String(50), nullable = False)
+    reason = db.Column('contact reason', db.Text, nullable = False)
+
 @app.route('/')
 def home():
     return render_template('index.html'), 200
@@ -20,6 +28,7 @@ def contact_form():
     lastName = request.args.get('lastName')
     email = request.args.get('email')
     business = request.args.get('business')
+    reason = request.args.get('reason')
     return render_template('index.html'), 200
 
 @app.route('/about')

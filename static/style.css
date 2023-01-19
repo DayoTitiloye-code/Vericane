@@ -480,28 +480,39 @@ form button:hover{
 }
 
 #thankYou-box{
-    border: 1px solid black;
+    border: 5px solid #FFD369;
     width: 50vw;
     margin: auto;
     padding: 60px;
     text-align: center;
+    background-color: #222831;
 }
 
 #thankYou-box h1{
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+    color: #FFD369;
+    font-size: 70px;
 }
 
 #thankYou-box p{
     margin-bottom: 50px;
+    color: white;
+    font-size: 20px;
 }
 
 #thankYou-button{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 20vw;
     margin-left: auto;
     margin-right: auto;
 }
 
 #thankYou-box a{
-    text-decoration: none;
+    /* text-decoration: none; */
+    color: white;
+}
+
+#thankYou-box a:hover{
+    color: #FFD369;
+    transition: 0.5s;
 }

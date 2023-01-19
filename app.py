@@ -29,7 +29,7 @@ class People(db.Model):
 def home():
     return render_template('index.html'), 200
 
-@app.route('/people', methods = ['POST','GET'])
+@app.route('/thankyou', methods = ['POST','GET'])
 def contact_form():
     firstName = None
     lastName = None
@@ -47,7 +47,7 @@ def contact_form():
         db.session.add(person)
         db.session.commit()
         # return render_template('people.html', form_data = form_data), 200
-    return render_template('index.html', form_data=form_data, firstName=firstName, lastName=lastName, email=email, business=business, reason=reason), 200
+    return render_template('thankyou.html', form_data=form_data, firstName=firstName, lastName=lastName, email=email, business=business, reason=reason), 200
 
 @app.route('/view')
 def people():

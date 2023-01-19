@@ -2,11 +2,14 @@ from flask import Flask, render_template, jsonify, request
 from flask_cors import CORS
 from werkzeug import exceptions
 from flask_sqlalchemy import SQLAlchemy
+from flask_mail import Mail
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 CORS(app)
+
+mail = Mail(app)
 
 db = SQLAlchemy(app)
 

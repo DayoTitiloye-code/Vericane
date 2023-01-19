@@ -478,3 +478,30 @@ form button:hover{
     animation-timing-function: ease-in;
     animation-delay: 0s;
 }
+
+#thankYou-box{
+    border: 1px solid black;
+    width: 50vw;
+    margin: auto;
+    padding: 60px;
+    text-align: center;
+}
+
+#thankYou-box h1{
+    margin-bottom: 70px;
+}
+
+#thankYou-box p{
+    margin-bottom: 50px;
+}
+
+#thankYou-button{
+    border: 1px solid black;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#thankYou-box a{
+    text-decoration: none;
+}

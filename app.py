@@ -2,16 +2,24 @@ from flask import Flask, render_template, jsonify, request
 from flask_cors import CORS
 from werkzeug import exceptions
 from flask_sqlalchemy import SQLAlchemy
-from flask_mail import Mail
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
+
 CORS(app)
 
-mail = Mail(app)
 
-db = SQLAlchemy(app)
+app.config['MAIL_SERVER'] = 'dayotitiloye2.outlook.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USERNAME'] = 'dayotitiloye2@outlook.com'
+app.config['MAIL_PASSWORD'] = 'password123'
+app.config['MAIL_USE_TLS'] = False
+app.config['MAIL_USE_SSL'] = True
+mail = Mail(app)
 
 class People(db.Model):
     _id = db.Column('id', db.Integer, primary_key = True)

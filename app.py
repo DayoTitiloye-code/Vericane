@@ -2,7 +2,7 @@ from flask import Flask, render_template, jsonify, request
 from flask_cors import CORS
 from werkzeug import exceptions
 from flask_sqlalchemy import SQLAlchemy
-from flask_mail import Mail, Message
+# from flask_mail import Mail, Message
 
 app = Flask(__name__)
 
@@ -13,13 +13,13 @@ db = SQLAlchemy(app)
 CORS(app)
 
 
-app.config['MAIL_SERVER'] = 'dayotitiloye2.outlook.com'
-app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'dayotitiloye2@outlook.com'
-app.config['MAIL_PASSWORD'] = 'password123'
-app.config['MAIL_USE_TLS'] = False
-app.config['MAIL_USE_SSL'] = True
-mail = Mail(app)
+# app.config['MAIL_SERVER'] = 'dayotitiloye2.outlook.com'
+# app.config['MAIL_PORT'] = 465
+# app.config['MAIL_USERNAME'] = 'dayotitiloye2@outlook.com'
+# app.config['MAIL_PASSWORD'] = 'password123'
+# app.config['MAIL_USE_TLS'] = False
+# app.config['MAIL_USE_SSL'] = True
+# mail = Mail(app)
 
 class People(db.Model):
     _id = db.Column('id', db.Integer, primary_key = True)
@@ -71,6 +71,10 @@ def about_page():
 @app.route('/contact')
 def contact_page():
     return render_template('contact.html'), 200
+
+@app.route('/issues')
+def issues_page():
+    return render_template('issues.html'), 200
 
 @app.errorhandler(exceptions.NotFound)
 def handle_404(err):

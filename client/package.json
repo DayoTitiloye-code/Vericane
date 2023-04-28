@@ -1,0 +1,22 @@
+{
+  "name": "vericane-client",
+  "version": "1.0.0",
+  "description": "Frontend for Vericane Mafia magazine web app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": "Kelechi Okoli, Dayo Titiloye",
+  "license": "ISC",
+  "dependencies": {
+    "@svgr/webpack": "^7.0.0",
+    "gsap": "^3.11.5",
+    "next": "^13.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.62.1"
+  }
+}

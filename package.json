@@ -1,0 +1,28 @@
+{
+  "name": "vericane",
+  "version": "1.0.0",
+  "description": "Vericane Mafia magazine webpage for the Aminu-Bassai Group",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DayoTitiloye-code/Vericane.git"
+  },
+  "author": "Kelechi Okoli, Dayo Titiloye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DayoTitiloye-code/Vericane/issues"
+  },
+  "homepage": "https://github.com/DayoTitiloye-code/Vericane#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

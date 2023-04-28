@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'FuturaCn';
+    src: url('../public/fonts/futura_std_bold_condensed_oblique-webfont.woff2') format('woff2'),
+        url('../public/fonts/futura_std_bold_condensed_oblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaCnExtra';
+    src: url('../public/fonts/futura_extra_bold_condensed-webfont.woff2') format('woff2'),
+        url('../public/fonts/futura_extra_bold_condensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaCnBoldIta';
+    src: url('../public/fonts/futura_condensed_extra_bold_italic-webfont.woff2') format('woff2'),
+        url('../public/fonts/futura_condensed_extra_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$logo-font: 'FuturaCn';
+$logo-font-bold: 'FuturaCnBoldIta';
+
+$purple: #933DB9;
+$pastel-purple: #CF88B2;
+$brown: #2A1A1D;
+$pastel-brown: #754A32;
+$white: #FFFFFF;
+$black: #0D0D0D;
+$cream: #F0DCB3;
+
+

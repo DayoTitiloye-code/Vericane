@@ -9,22 +9,29 @@
     background: $purple;
 }
 .content{
-    border: solid 1px red;
+    h2{
+        font-family: $site-font;
+        text-align: center;
+        font-weight: 400;
+        font-style: italic;
+        color: rgba($white, 0.85);
+        margin: 2em 0 0.5em 0;
+    }
 }
 .logo{
     position: relative;
     width: 70vw;
     .mafiaMen{
         position: absolute;
-        left: -15%;
-        bottom: -20%;
+        left: -10%;
+        bottom: -18%;
         display: block;
         width: 60%;
     }
     h1{
         font-family: $logo-font-bold;
         color: $white;
-        font-size: 40vw;
+        font-size: clamp(9em, 35vw, 25em);
         margin: 0;
         text-align: center;
         letter-spacing: -5px;
@@ -32,15 +39,38 @@
 }
 
 .socials{
-    border: solid 1px red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: clamp(9em, 10em, 12em);
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    li{
+        display: block;
+        width: clamp(1.75em, 2em , 3em);
+        a{
+            display: block;
+            width: 90%;
+        }
+    }
 }
 .kanji{
     position: absolute;
     bottom: 10%;
     right: 10%;
-    width: 30%;
+    width: clamp(7em, 9em, 11em);
     svg{
         display: block;
         fill: $white;
     }
 }
+
+// @media only  screen and (min-width: 500px){
+//     .logo{
+//         .mafiaMen{
+//             left: 0%;
+//             width: 50%;
+//         }
+//     }
+// }
